@@ -1,0 +1,21 @@
+{
+  "name": "SimpleJson",
+  "version": "1.0.0",
+  "author": "Eugene Kaliuzhnyi",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.16.1",
+    "mongoose": "^4.2.5",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

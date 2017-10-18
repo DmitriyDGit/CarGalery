@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>JS/Expert Example</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+    <!-- Navigation -->
+ 
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h1 class="my-4">Galery</h1>
+          <div class="list-group">
+          	<div>
+          		<button class="btn btn-default list-group-item" type="button" id="add" data-toggle="tooltip" 	data-placement="left" title="" data-original-title="Добавить одно изображение">Добавить из базы</button>
+          	</div>
+						<div>
+							<button class="btn btn-default list-group-item" type="button" id="add-new" data-toggle="tooltip" data-placement="left" 	title="" data-original-title="Добавить одно изображение">Добавить новое</button></div>
+         		<div>
+         			<button class="btn btn-default list-group-item" type="button" id="clear" data-toggle="tooltip" data-placement="left" title="" data-original-title="Очистить галерею">Очистить</button>
+         		</div>
+						<div id = "sortField" class = "list-group-item">
+							<select class = "select" >
+											<option value = 0>Сортировать галерею</option>
+										  <option value = 1>Сортировать по имени А-Я</option>
+										  <option value = 2>Сортировать по имени Я-А</option>
+										  <option value = 3>Сортировать по дате Новые - Старые</option>
+										  <option value = 4>Сортировать по дате Старые - Новые</option>
+							</select>
+					</div>
+					<div class = "list-group-item">
+						<button id="output-block" class="btn btn-default "><span class="glyphicon glyphicon-th"></span></button>
+						<button id="output-inline" class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span></button>
+					</div>
+						<div class = "list-group-item">
+							<input type="text" name="filter" id="filter">
+							<button class="btn btn-default " type="button" id="filterBtn" data-toggle="tooltip" data-placement="		left" title="" data-original-title="Фильтровать" disabled>Выбрать из галереи</button>
+						</div>
+						<p class="count-text list-group-item">Добавленно изображений: <span id="count">00</span></p>
+				</div>
+       </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+         
+
+				<div class="row">
+									<form class="form-horizontal">
+										<p class="lead">Добавьте новую информацию о машине</p>
+										<p class="bg-success validation-msg">Форма заполнена правильно</p>
+										<p class="bg-danger validation-msg">Ошибка заполнения формы </p>
+										<p class = "wrong-url validation-msg">Такой адресс уже используется </p>
+										<p class = "wrong-fill validation-msg">Заполнены не все поля </p>
+										<div class="form-group">
+											<label for="inputUrl" class="col-sm-2 control-label">Адресс</label>
+											<div class="col-sm-10">
+										  	<input type="text" class="form-control" id="inputUrl" placeholder="Url">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputName" class="col-sm-2 control-label">Название</label>
+											<div class="col-sm-10">
+										  	<input type="text" class="form-control" id="inputName" placeholder="Name">
+										</div>
+									  </div>
+									  <div class="form-group">
+											<label for="inputDescription" class="col-sm-2 control-label">Описание</label>
+											<div class="col-sm-10">
+										  	<input type="text" class="form-control" id="inputDescription" placeholder="Description">
+										</div>
+									  </div>
+										
+										 <div class="form-group">
+											<label for="inputPopulary" class="col-sm-2 control-label">Популярность</label>
+											<div class="col-sm-10">
+										  	<input type="text" class="form-control" id="inputPopulary" placeholder="Popular">
+										</div>
+									  </div>
+										<div class="form-group">
+											<label for="inputProgress" class="col-sm-2 control-label">Прогресс</label>
+											<div class="col-sm-10">
+										  	<input type="text" class="form-control" id="inputProgress" placeholder="Progress 0-100">
+											</div>
+									  </div>
+										<div class="form-group">
+											<label for="inputDate" class="col-sm-2 control-label">Дата</label>
+											<div class="col-sm-10">
+										  	<input type="date" class="form-control" id="inputDate" placeholder="Date">
+											</div>
+									  </div>
+									  <div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+											  
+												<button type="submit" id="saveBtn" class="btn btn-default" >Сохранить</button>
+												<button type="submit" id="refreshBtn" class="btn btn-default">Обновить</button>
+												
+											</div>
+										</div>
+									</form>	
+							</div>
+				
+				<div class="row" id="result">
+				</div>
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container1">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/model.js"></script>
+	
+	<script src="js/moment.js"></script>
+</body>
+</html>
