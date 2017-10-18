@@ -62,6 +62,7 @@ body {
 
 .form-horizontal {
     display:none;
+    padding:20px;
 }
 .table-wrapper {
     display:block;

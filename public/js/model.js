@@ -146,6 +146,8 @@
         this.validate = function  (event) {
                 if(this.DOMElements.url.value
                     && this.DOMElements.name.value
+                    && this.DOMElements.description.value
+                    && this.DOMElements.date.value
                  ) {         
                     this.prepareInputDataToAdd(this.mappedArray);
                     this.addToGalery(this.mappedArray[this.mappedArray.length-1]);
@@ -295,6 +297,7 @@
         }
 
         this.init =  function () {
+            this.showHide(this.DOMElements.form, "none");
             this.mappedArray = this.mapTheArray(this.makeNewArr(this.serverData));
           //  if (this.counter < this.mappedArray.length  ) {
                 if(this.tempArray.length == 0){
